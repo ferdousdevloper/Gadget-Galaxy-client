@@ -66,9 +66,10 @@ const ProductList = () => {
     return (
         <div className="container mx-auto p-6">
             <h1 className="text-4xl font-bold text-center mb-10">Gadget Galaxy Products</h1>
-
-            {/* Search */}
-            <div className="mb-8 flex space-x-4">
+            {/* Filters and Sorting */}
+            <div className="grid grid-cols-1 md:grid-cols-7 gap-4 my-10">
+                {/* Search */}
+            <div className="col-span-3 flex space-x-4">
                 <input 
                     type="text" 
                     placeholder="Search by product model..." 
@@ -83,16 +84,21 @@ const ProductList = () => {
                     Search
                 </button>
             </div>
-
-            {/* Filters and Sorting */}
-            <div className="flex flex-col sm:flex-row justify-between mb-8 space-y-4 sm:space-y-0 sm:space-x-4">
                 {/* Filter and Sort Dropdowns */}
                 <select 
                     name="brand" 
                     onChange={handleFilterChange} 
-                    className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 z-50"
                 >
                     <option value="">All Brands</option>
+                    <option value="Apple">Apple</option>
+                    <option value="Corsair">Corsair</option>
+                    <option value="Havit">Havit</option>
+                    <option value="Logitech">Logitech</option>
+                    <option value="Marvo">Marvo</option>
+                    <option value="Microsoft">Microsoft</option>
+                    <option value="Razer">Razer</option>
+                    <option value="Sony">Sony</option>
                     {/* Other options */}
                 </select>
 
@@ -102,6 +108,9 @@ const ProductList = () => {
                     className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 >
                     <option value="">All Categories</option>
+                    <option value="Headphone">Headphone</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
                     {/* Other options */}
                 </select>
 
