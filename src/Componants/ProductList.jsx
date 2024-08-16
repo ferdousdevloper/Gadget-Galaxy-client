@@ -130,7 +130,7 @@ const ProductList = () => {
                         key={product._id} 
                         className="border p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-300"
                     >
-                        <img src={product.image} alt={product.model} className="h-40 w-full object-cover mb-4 rounded-lg" />
+                        <img src={product.image} alt={product.model} className="w-full max-h-80 mb-4 rounded-lg" />
                         <h3 className="text-xl font-semibold">{product.model}</h3>
                         <p className="text-gray-600">{product.category} by {product.brand}</p>
                         <p className="text-gray-800 font-bold">${product.price}</p>
@@ -177,7 +177,7 @@ const ProductList = () => {
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
                     <div className="bg-white p-6 rounded-lg max-w-lg w-full">
                         <h2 className="text-2xl font-bold mb-4">{selectedProduct.model}</h2>
-                        <img src={selectedProduct.image} alt={selectedProduct.model} className="h-40 w-full object-cover mb-4 rounded-lg" />
+                        <img src={selectedProduct.image} alt={selectedProduct.model} className="w-full object-cover mb-4 rounded-lg" />
                         <p><strong>Brand:</strong> {selectedProduct.brand}</p>
                         <p><strong>Category:</strong> {selectedProduct.category}</p>
                         <p><strong>Description:</strong> {selectedProduct.description}</p>
