@@ -54,7 +54,8 @@ const Register = () => {
     });
   };
   return (
-    <div className="container flex flex-col mx-auto h-screen items-center justify-center">
+    <div className=" flex flex-col mx-auto h-screen items-center justify-center bg-gradient-to-t  from-indigo-800 to-fuchsia-500">
+      <img src="https://i.postimg.cc/qRxFGcQ3/logo.png" alt="" className="max-w-40 mb-10" />
       <h1 className="text-3xl font-bold mb-6">Register</h1>
       <div className="max-w-96 mx-auto border rounded-xl shadow-xl">
         <form onSubmit={handleSubmit(onSubmit)} className="card-body">
@@ -69,7 +70,7 @@ const Register = () => {
             <input
               type="email"
               placeholder="Email"
-              className="input input-bordered"
+              className="input input-bordered bg-gradient-to-r  from-indigo-800 to-fuchsia-500"
               required
               {...register("email", { required: true })}
             />
@@ -91,7 +92,7 @@ const Register = () => {
               <input
                 type={showPassword ? "password" : "text"}
                 placeholder="Password"
-                className="input input-bordered w-full"
+                className="input input-bordered w-full bg-gradient-to-r  from-indigo-800 to-fuchsia-500"
                 required
                 {...register("password", {
                   required: true,
@@ -113,14 +114,14 @@ const Register = () => {
           <div
             className="form-control mt-6"
           >
-            <button className="btn bg-blue-500 text-white border-0">
+            <button className="btn bg-gradient-to-r  from-indigo-800 to-fuchsia-500 text-white border-0">
               Register
             </button>
           </div>
           <div className="mt-8">
             <p>
               Already have an account?{" "}
-              <Link to="/login" className="text-primary">
+              <Link to="/login" className="text-fuchsia-500">
                 <strong>Sign In</strong>
               </Link>{" "}
             </p>
