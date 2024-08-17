@@ -23,7 +23,7 @@ const ProductList = () => {
             if (filters.priceRange) query += `&priceRange=${filters.priceRange}`;
             if (sort) query += `&sort=${sort}`;
 
-            const response = await fetch(`http://localhost:5000/products${query}`);
+            const response = await fetch(`https://gadget-galaxy-backend-alpha.vercel.app/products${query}`);
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
