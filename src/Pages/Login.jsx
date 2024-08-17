@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import toast, { Toaster } from "react-hot-toast";
 import { FiEye, FiEyeOff } from "react-icons/fi";
+import SocialLogin from "../Componants/SocialLogin";
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(true);
@@ -104,6 +105,7 @@ const Login = () => {
                 </p>
               </div>
             </form>
+            <SocialLogin></SocialLogin>
             </div>
         </div>
     );

@@ -7,6 +7,7 @@ import PrivateRoute from "./PrivateRoute";
 import ErrorPage404 from "../Pages/ErrorPage404";
 import About from "../Pages/About";
 import Root from "../Root";
+import Contact from "../Pages/Contact";
 
 const Router = createBrowserRouter([
   {
@@ -16,13 +17,17 @@ const Router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home></Home>,
+        element: <PrivateRoute><Home></Home></PrivateRoute>,
       },
       {
         path: "/about",
-        element: <About></About>,
-      }
-    ]
+        element: <PrivateRoute><About></About></PrivateRoute>,
+      },
+      {
+        path: "/contact",
+        element: <PrivateRoute><Contact></Contact></PrivateRoute>,
+      },
+    ],
   },
   {
     path:"/login",

@@ -184,23 +184,23 @@ const ProductList = () => {
             </div>
 
             {selectedProduct && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-                    <div className="p-6 rounded-lg max-w-lg w-full bg-gradient-to-bl  from-indigo-500 to-fuchsia-200">
-                        <h2 className="text-2xl font-bold mb-4 text-gray-800">{selectedProduct.model}</h2>
-                        <img src={selectedProduct.image} alt={selectedProduct.model} className="w-full max-h-80 mb-4 rounded-lg" />
-                        <p className="text-gray-800 mb-2">Brand: {selectedProduct.brand}</p>
-                        <p className="text-gray-800 mb-2">Category: {selectedProduct.category}</p>
-                        <p className="text-gray-800 font-bold mb-2">Price: ${selectedProduct.price}</p>
-                        <p className="text-sm text-gray-800 mb-4">Added on: {new Date(selectedProduct.date).toLocaleDateString()}</p>
-                        <p className="text-gray-900">{selectedProduct.description}</p>
-                        <button 
-                            onClick={handleCloseModal} 
-                            className="mt-6 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600"
-                        >
-                            Close
-                        </button>
-                    </div>
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 sm:p-6">
+                <div className="p-4 sm:p-6 rounded-lg max-w-full sm:max-w-lg w-full bg-gradient-to-bl from-indigo-500 to-fuchsia-200">
+                  <h2 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-4 text-gray-800">{selectedProduct.model}</h2>
+                  <img src={selectedProduct.image} alt={selectedProduct.model} className="w-full max-h-60 sm:max-h-80 mb-4 rounded-lg" />
+                  <p className="text-gray-800 mb-1 sm:mb-2">Brand: {selectedProduct.brand}</p>
+                  <p className="text-gray-800 mb-1 sm:mb-2">Category: {selectedProduct.category}</p>
+                  <p className="text-gray-800 font-bold mb-1 sm:mb-2">Price: ${selectedProduct.price}</p>
+                  <p className="text-sm text-gray-800 mb-2 sm:mb-4">Added on: {new Date(selectedProduct.date).toLocaleDateString()}</p>
+                  <p className="text-gray-900 mb-4">{selectedProduct.description}</p>
+                  <button 
+                    onClick={handleCloseModal} 
+                    className="mt-4 sm:mt-6 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600"
+                  >
+                    Close
+                  </button>
                 </div>
+              </div>
             )}
         </div>
     );

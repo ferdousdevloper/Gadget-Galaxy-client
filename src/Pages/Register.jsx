@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import toast, { Toaster } from "react-hot-toast";
 import { FiEye, FiEyeOff } from "react-icons/fi";
 import useAuth from './../Hook/useAuth';
+import SocialLogin from "../Componants/SocialLogin";
 
 const Register = () => {
   const { createUser } = useAuth();
@@ -128,6 +129,7 @@ const Register = () => {
             </p>
           </div>
         </form>
+        <SocialLogin></SocialLogin>
       </div>
     </div>
   );

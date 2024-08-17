@@ -10,8 +10,8 @@ const Navbar = () => {
           to="/"
           className={({ isActive }) =>
             isActive
-              ? "text-fuchsia-500 font-bold border border-fuchsia-500 mr-3 scale-105"
-              : "font-bold mr-3 text-indigo-500"
+              ? "text-fuchsia-600 font-bold border border-fuchsia-600 mr-3 scale-105"
+              : "font-bold mr-3 text-indigo-900"
           }
         >
           Home
@@ -22,8 +22,8 @@ const Navbar = () => {
           to="/about"
           className={({ isActive }) =>
             isActive
-              ? "text-fuchsia-500 font-bold border border-fuchsia-500 mr-3 scale-105"
-              : "font-bold mr-3 text-indigo-500"
+              ? "text-fuchsia-600 font-bold border border-fuchsia-600 mr-3 scale-105"
+              : "font-bold mr-3 text-indigo-900"
           }
         >
          ABOUT
@@ -34,8 +34,8 @@ const Navbar = () => {
           to="/contact"
           className={({ isActive }) =>
             isActive
-              ? "text-fuchsia-500 font-bold border border-fuchsia-500 mr-3 scale-105"
-              : "font-bold mr-3 text-indigo-500"
+              ? "text-fuchsia-600 font-bold border border-fuchsia-600 mr-3 scale-105"
+              : "font-bold mr-3 text-indigo-900"
           }
         >
          CONTACT
@@ -44,7 +44,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="shadow-lg rounded-2xl navbar z-[60]   md:px-16">
+    <div className="md:container mx-auto shadow-lg rounded-2xl navbar z-[60]   md:px-16">
       <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown z-[99]">

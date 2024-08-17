@@ -5,7 +5,7 @@ import Navbar from "../Componants/Navbar";
 const Home = () => {
   
   return (
-    <div className="bg-gradient-to-b  from-indigo-400 to-fuchsia-900">
+    <div className="">
       <Toaster/>
       <div className="container mx-auto">
         <div>
