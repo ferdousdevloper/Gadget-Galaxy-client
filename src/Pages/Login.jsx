@@ -33,7 +33,8 @@ const Login = () => {
       });
   };
     return (
-        <div className="container flex flex-col mx-auto h-screen items-center justify-center">
+        <div className="flex flex-col mx-auto h-screen items-center justify-center bg-gradient-to-t  from-indigo-800 to-fuchsia-500">
+          <img src="" alt="" />
             <h1 className="text-3xl font-bold mb-6">Login</h1>
             <div className="max-w-96 mx-auto border rounded-xl shadow-xl">
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">

@@ -161,7 +161,7 @@ const ProductList = () => {
                 <button 
                     onClick={() => setPage(page - 1)} 
                     disabled={page === 1}
-                    className="px-4 py-2 bg-fuchsia-500 text-white rounded-lg hover:bg-indigo-800 disabled:bg-gray-300"
+                    className="px-4 py-2 bg-fuchsia-500 text-white rounded-lg hover:bg-indigo-800 disabled:bg-gray-700"
                 >
                     Previous
                 </button>
@@ -177,7 +177,7 @@ const ProductList = () => {
                 <button 
                     onClick={() => setPage(page + 1)} 
                     disabled={page === totalPages}
-                    className="px-4 py-2 bg-fuchsia-500 text-white rounded-lg hover:bg-indigo-800 disabled:bg-gray-300"
+                    className="px-4 py-2 bg-fuchsia-500 text-white rounded-lg hover:bg-indigo-800 disabled:bg-gray-700"
                 >
                     Next
                 </button>
