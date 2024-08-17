@@ -1,20 +1,14 @@
 import { Toaster } from "react-hot-toast";
 import ProductList from "../Componants/ProductList";
-import useAuth from "../Hook/useAuth";
+import Navbar from "../Componants/Navbar";
 
 const Home = () => {
-  const { logout } = useAuth();
+  
   return (
     <div className="bg-gradient-to-b  from-indigo-400 to-fuchsia-900">
       <Toaster/>
       <div className="container mx-auto">
         <div>
-          <div className="flex justify-between items-center">
-            <h1 className="text-xl font-black text-gray-800">GADGET GALAXY</h1>
-            <button onClick={logout} className="btn btn-error text-white my-4">
-              Logout
-            </button>
-          </div>
         </div>
         <img
           src="https://i.postimg.cc/BvLLX6Z0/banner1.jpg"
