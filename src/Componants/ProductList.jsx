@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './styles.css'; // Import your custom CSS file
+import { IoIosStar } from 'react-icons/io';
 
 const ProductList = () => {
     const [products, setProducts] = useState([]);
@@ -146,6 +146,7 @@ const ProductList = () => {
                         <h3 className="text-xl font-semibold text-gray-800">{product.model}</h3>
                         <p className="text-gray-700">{product.category} by {product.brand}</p>
                         <p className="text-gray-800 font-bold">${product.price}</p>
+                        <div className='flex items-center gap-2 text-gray-800'><IoIosStar className='text-yellow-500' />{product?.rating}</div>
                         <p className="text-sm text-gray-700">{new Date(product.date).toLocaleDateString()}</p>
                         <button 
                             onClick={() => handleProductClick(product)} 
@@ -191,6 +192,7 @@ const ProductList = () => {
                   <p className="text-gray-800 mb-1 sm:mb-2">Brand: {selectedProduct.brand}</p>
                   <p className="text-gray-800 mb-1 sm:mb-2">Category: {selectedProduct.category}</p>
                   <p className="text-gray-800 font-bold mb-1 sm:mb-2">Price: ${selectedProduct.price}</p>
+                  <div className='flex items-center gap-2 text-gray-800'><IoIosStar className='text-yellow-500' />{selectedProduct?.rating}</div>
                   <p className="text-sm text-gray-800 mb-2 sm:mb-4">Added on: {new Date(selectedProduct.date).toLocaleDateString()}</p>
                   <p className="text-gray-900 mb-4">{selectedProduct.description}</p>
                   <button 

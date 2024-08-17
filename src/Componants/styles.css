@@ -1,8 +1,0 @@
-/* styles.css */
-.fantastic-background {
-    background-image: url('https://i.postimg.cc/QdTRkqcf/bg.jpg'); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh; /* Full viewport height */
-}
