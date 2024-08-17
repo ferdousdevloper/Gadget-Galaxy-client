@@ -34,7 +34,7 @@ const Login = () => {
   };
     return (
         <div className="flex flex-col mx-auto h-screen items-center justify-center bg-gradient-to-t  from-indigo-800 to-fuchsia-500">
-          <img src="" alt="" />
+          <img src="https://i.postimg.cc/qRxFGcQ3/logo.png" alt="" className="max-w-40 mb-10" />
             <h1 className="text-3xl font-bold mb-6">Login</h1>
             <div className="max-w-96 mx-auto border rounded-xl shadow-xl">
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
@@ -55,7 +55,7 @@ const Login = () => {
                   data-aos-delay="1100"
                   type="email"
                   placeholder="email"
-                  className="input input-bordered"
+                  className="input input-bordered bg-gradient-to-r  from-indigo-800 to-fuchsia-500"
                   required
                   {...register("email", { required: true })}
                 />
@@ -83,7 +83,7 @@ const Login = () => {
                   <input
                     type={showPassword ? "password" : "text"}
                     placeholder="password"
-                    className="input input-bordered w-full"
+                    className="input input-bordered w-full bg-gradient-to-r  from-indigo-800 to-fuchsia-500"
                     required
                     {...register("password", { required: true })}
                   />
@@ -104,7 +104,7 @@ const Login = () => {
                 data-aos-delay="1900"
                 className="form-control mt-6"
               >
-                <button className="btn bg-blue-500 border-0 text-white font-extrabold">
+                <button className="btn  border-0 text-white font-extrabold bg-gradient-to-r  from-indigo-800 to-fuchsia-500">
                   Login
                 </button>
               </div>
@@ -115,7 +115,7 @@ const Login = () => {
                   data-aos-delay="2100"
                 >
                   New to here? Please{" "}
-                  <Link to="/register" className="text-primary">
+                  <Link to="/register" className="text-fuchsia-500">
                     <strong>Register</strong>
                   </Link>{" "}
                 </p>
