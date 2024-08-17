@@ -41,18 +41,12 @@ const Login = () => {
               <div className="form-control">
                 <label className="label">
                   <span
-                    data-aos="fade-left"
-                    data-aos-duration="1000"
-                    data-aos-delay="900"
                     className="label-text"
                   >
                     Email
                   </span>
                 </label>
                 <input
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="1100"
                   type="email"
                   placeholder="email"
                   className="input input-bordered bg-gradient-to-r  from-indigo-800 to-fuchsia-500"
@@ -66,18 +60,12 @@ const Login = () => {
               <div className="form-control">
                 <label className="label">
                   <span
-                    data-aos="fade-left"
-                    data-aos-duration="1000"
-                    data-aos-delay="1300"
                     className="label-text"
                   >
                     Password
                   </span>
                 </label>
                 <div
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="1500"
                   className="relative"
                 >
                   <input
@@ -99,9 +87,6 @@ const Login = () => {
                 )}
               </div>
               <div
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="1900"
                 className="form-control mt-6"
               >
                 <button className="btn  border-0 text-white font-extrabold bg-gradient-to-r  from-indigo-800 to-fuchsia-500">
@@ -110,9 +95,6 @@ const Login = () => {
               </div>
               <div className="mt-8">
                 <p
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
-                  data-aos-delay="2100"
                 >
                   New to here? Please{" "}
                   <Link to="/register" className="text-fuchsia-500">
