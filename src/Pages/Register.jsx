@@ -1,7 +1,7 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 import { FiEye, FiEyeOff } from "react-icons/fi";
 import useAuth from './../Hook/useAuth';
 
@@ -55,6 +55,7 @@ const Register = () => {
   };
   return (
     <div className=" flex flex-col mx-auto h-screen items-center justify-center bg-gradient-to-t  from-indigo-800 to-fuchsia-500">
+      <Toaster/>
       <img src="https://i.postimg.cc/qRxFGcQ3/logo.png" alt="" className="max-w-40 mb-10" />
       <h1 className="text-3xl font-bold mb-6">Register</h1>
       <div className="max-w-96 mx-auto border rounded-xl shadow-xl">

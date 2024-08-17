@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import ProductList from "../Componants/ProductList";
 import useAuth from "../Hook/useAuth";
 
@@ -5,6 +6,7 @@ const Home = () => {
   const { logout } = useAuth();
   return (
     <div className="bg-gradient-to-b  from-indigo-400 to-fuchsia-900">
+      <Toaster/>
       <div className="container mx-auto">
         <div>
           <div className="flex justify-between items-center">
